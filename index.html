@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing V1.0</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="headline">
+        <h1>Gæt et tal</h1>
+      </div>
+      <div id="randomRange">
+        <p> Tallet er mellem 1 og 1000 </p>
+      </div>
+      <div align="center" id="slidecontainer">
+          <input type="range" min="0" max="10000" value="5000" class="slider" id="myRange">
+        </div>
+      <input name="number" type="number" id="ghost-input" placeholder="Indtast et tal">
+      <button onclick="preCheck();" id="ghost-button">Check nummeret</button>
+    </div>
+    <div id="answer"></div>
+    <script src="sketch.js"></script>
+  </body>
+
+</html>
